@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- File name: feedback.html
+Author: Tham Key Hon -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Slideshow/NavMenu Javascript -->
+    <script src="Script/script.js" defer></script>
+
+    <!-- slider Javascript -->
+    <script src="Script/slider.js" defer></script>
+
+    <!-- Custom Styles -->
+    <link href="CSS/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Start of Navigation -->
+    <nav class="navbar  navbar-fixed-top  bg-color transparent fixed-top">
+        <div class="nav text-decoration-none navbar-expand-md container">
+
+            <a class="navbar-brand zoom" id="keyicon" href="index.html"><img src="Images/keyicon.png"
+                    alt="homekey" style="width: 8vh;" />
+            </a>
+
+            <div class="nav topnav" id="myTopnav">
+
+                <a class="nav-item nav-pills nav-link active " href="index.html">About Me</a>
+
+                <!-- Dropdown for experiences -->
+                <div class="nav-item dropdown nav-pills">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Experiences</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item nav-link " href="pastexp.html">Past</a>
+                        <a class="dropdown-item nav-link" href="currentexp.html">Current</a>
+                        <a class="dropdown-item nav-link" href="course&career.html">Future</a>
+
+                    </div>
+                </div>
+
+                <a class="nav-item nav-pills nav-link" href="feedback.html">Feedback</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Navigation -->
+
+    <!-- Main section -->
+    <div class="container custom-container transition-container smooth-transition" style="margin-top: 10vh;">
+        <div class="custom-section">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Let's Get In Touch!</h1>
+                    <hr>
+                </div>
+            </div>
+            <!-- Feedback section -->
+
+            <form id="feedback" action="index.html" method="POST">
+                <!-- Personal Info section -->
+                <fieldset id="personalInfo" class="form-group">
+                    <legend>Personal Information</legend>
+                    <p><strong>Required values are marked by an asterisk (*)</strong></p>
+                    <div class="form-group form-row">
+
+                        <div class="form-group col-lg-6 col-md-12 col-sm-12">
+
+                            <label class="form-control-label" for="name">*Name :</label>
+                            <input class="form-control" name="name" id="name" type="text"
+                                placeholder="First & Last name" required>
+                        </div> <!-- Form group -->
+
+                        <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                            <label class="form-control-label" for="contact">*Contact No. : </label>
+                            <input class="form-control" name="contact" id="contact" type="tel"
+                                pattern="^\d{8}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" placeholder="12345678" required>
+                        </div> <!-- Form group -->
+
+                    </div> <!-- Form group -->
+
+                    <div class="form-group">
+                        <label class="form-control-label" for="email">*Email : </label>
+                        <input class="form-control" name="email" id="email" type="email" placeholder="example@email.com"
+                            required>
+                    </div> <!-- Form group -->
+                    <div class="form-group form-row">
+
+                        <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                            <label class="form-control-label">Gender : </label>
+
+                            <div class="form-inline ml-2">
+                                <div class="form-check px-2">
+                                    <input class="form-check-input" name="gender" id="male" value="male" type="radio" />
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div><!-- Form check -->
+
+                                <div class="form-check px-2">
+                                    <input class="form-check-input" name="gender" id="female" value="female"
+                                        type="radio" />
+                                    <label class="form-check-label" for="female">Female</label>
+                                </div><!-- Form check -->
+
+                                <div class="form-check px-2">
+                                    <input class="form-check-input" name="gender" id="othersG" value="others"
+                                        type="radio" />
+                                    <label class="form-check-label" for="othersG">Others</label>
+                                </div><!-- Form inline -->
+                            </div> <!-- Form check -->
+                        </div> <!-- Form group -->
+
+                        <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                            <label class="form-control-label" for="identity">Identity : </label>
+                            <div class="form-group">
+                                <select name="identity" id="identity">
+                                    <option value="identity1" selected>Student</option>
+                                    <option value="identity2">Teacher</option>
+                                    <option value="identity3">Parent</option>
+                                    <option value="identity4">Others</option>
+                                </select>
+                            </div> <!-- Form group -->
+
+                        </div> <!-- Form group -->
+                    </div><!-- Form group -->
+
+                    <div class="form-group">
+
+
+                        <div class="form-group">
+                            <label class="form-control-label" for="birthday">Birthday : </label>
+                            <input class="form-control" name="birthday" id="birthday" type="date">
+                        </div> <!-- Form group -->
+                    </div> <!-- Form group -->
+                    <div class="form-group">
+                        <label class="form-check-label">Where did you hear about me? : <br />(select all that
+                            applies)<br /></label>
+                        <div class="form-inline text-center">
+
+                            <div class="custom-control custom-switch mx-2">
+                                <input class="custom-control-input" type="checkbox" name="internet" id="internet"
+                                    value="internet">
+                                <label class="custom-control-label" for="internet">Internet</label>
+
+                            </div>
+                            <div class="custom-control custom-switch mx-2">
+
+                                <input class="custom-control-input" type="checkbox" name="news" id="news" value="news">
+                                <label class="custom-control-label" for="news">News</label>
+                            </div>
+                            <div class="custom-control custom-switch mx-2">
+
+                                <input class="custom-control-input" type="checkbox" name="word" id="word" value="word">
+                                <label class="custom-control-label" for="word">Word of Mouth</label>
+                            </div>
+
+                            <div class="custom-control custom-switch mx-2">
+
+                                <input class="custom-control-input" type="checkbox" name="me" id="me" value="me">
+                                <label class="custom-control-label" for="me">From Me</label>
+                            </div>
+
+                            <div class="custom-control custom-switch mx-2">
+
+                                <input class="custom-control-input" type="checkbox" name="others" id="others"
+                                    value="others">
+                                <label class="custom-control-label" for="others">Others</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset> <!-- fieldset -->
+
+
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1>Help me Improve!</h1>
+                        <hr>
+                    </div>
+                </div>
+
+                <!-- Rating section -->
+                <fieldset id="rating">
+                    <legend>Rate my Website</legend>
+                    <div class="col">
+
+                        <label class="form-control-label" for="rateRange">Rate my <strong>Overall</strong>
+                            website (0=poor;
+                            10=great)</label>
+
+                        <div class="col">
+                            <div class="row d-flex justify-content-center align-items-center">
+                                0
+                                <input class="form-control custom-range text-center" name="overallRate" id="rateRange"
+                                    type="range" value="5" step="1" min="0" max="10" style="width: 80%;" />
+                                10
+                            </div>
+                            <div class="text-center col-12">
+
+                                <span id="numberSlider" style="font-weight:bold;color:purple">5</span>
+                            </div>
+                        </div>
+                        <label class="form-control-label" for="rateRange">Rate my website's <strong>Aesthetics</strong>
+                            (0=poor;
+                            10=great)</label>
+
+                        <div class="col">
+                            <div class="row d-flex justify-content-center align-items-center">
+                                0
+                                <input class="form-control custom-range text-center" name="overallRate" id="rateRange1"
+                                    type="range" value="5" step="1" min="0" max="10" style="width: 80%;" />
+                                10
+                            </div>
+                            <div class="text-center col-12">
+
+                                <span id="numberSlider1" style="font-weight:bold;color:purple">5</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="row">
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">What can be improved?</span>
+                                </div>
+                                <textarea class="form-control pb-5" aria-label="With textarea"
+                                    placeholder="Don't be shy!"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div id="buttons" class="text-center p-5">
+                    <button type="reset" class="resetButton btn btn-outline-dark">Reset Form</button>
+                    <button type="submit" class="submitButton btn btn-outline-success">Submit Form</button>
+
+                </div>
+
+            </form>
+        </div><!-- Section -->
+    </div><!-- Container -->
+
+    <!-- Start of Next & Previous buttons -->
+    <div class="quick-arrow d-flex justify-content-center align-items-center">
+
+        <a href="course&career.html" class="previous round ">&#8249;</a>
+        <a href="index.html" class="next round">&#8250;</a>
+
+    </div>
+    <!-- End of Next & Previous buttons -->
+
+    <!-- Footer section -->
+
+    <footer class="footer">
+        <p> &copy; Copyright Tham Key Hon 2021. All rights reserved.
+            <a href="http://www.instagram.com/imdakey/" target="blank" class="fa fa-instagram"></a>
+            <a href="https://open.spotify.com/user/21muvhb53bz5vh7zsiucnjvly?si=0e4b4c71e8604c90" target="blank"
+                class="fa fa-spotify"></a>
+            <a href="https://www.facebook.com/profile.php?id=100010008696379" target="blank" class="fa fa-facebook"></a>
+            <a href="mailto:tkeyhon.20@ichat.sp.edu.sg" target="blank" class="fa fa-envelope"></a>
+        </p>
+
+    </footer>
+</body>
+
+</html>

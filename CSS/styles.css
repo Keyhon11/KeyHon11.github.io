@@ -1,0 +1,564 @@
+/* File name: styles.css
+Author: Tham Key Hon */
+
+/* Configuration Styles */
+
+h1 {
+   font-size: 34px;
+   font-weight: bolder;
+}
+
+h2 {
+   font-size: 21px;
+   font-weight: bold;
+}
+
+p {
+   font-size: 16px;
+   font-weight: normal;
+   margin: 0;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+img {
+   margin-left: auto;
+   margin-right: auto;
+   width: auto;
+   height: auto;
+}
+
+.images {
+   margin-left: auto;
+   margin-right: auto;
+   width: 60vh;
+   height: auto;
+   border: black double 4px;
+   border-radius: 20px;
+}
+
+.custom-container {
+   border: 2px solid;
+   margin-top: 4em;
+   background-color: rgb(175, 212, 245);
+}
+
+.custom-section {
+   padding: 5%;
+   height: auto
+}
+
+::selection {
+   background-color: white;
+   color: darkorchid;
+}
+
+/* Slideshow Styles */
+
+.slideshow-container * {
+   box-sizing: border-box
+}
+
+.slideshow-container body {
+   font-family: Verdana, sans-serif;
+   margin: 0
+}
+
+.slideshow-container .mySlides {
+   display: none;
+}
+
+.slideshow-container {
+   max-width: 400px;
+   position: relative;
+   margin: auto;
+}
+
+.slideshow-container .prev, .slideshow-container .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   padding: 16px;
+   margin-top: -22px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+}
+
+.slideshow-container .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+}
+
+.slideshow-container .prev:hover, .slideshow-container .next:hover {
+   text-decoration: none;
+   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slideshow-container .text {
+   color: #ffffff;
+   font-size: 21px;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.slideshow-container .numbertext {
+   color: #f2f2f2;
+   font-size: 21px;
+   padding: 8px 60px;
+   position: absolute;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   top: 0;
+}
+
+.slideshow-container .dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+}
+
+.slideshow-container .dots-slideshow {
+   padding-bottom: 50px;
+}
+
+.fade:not(.show) {
+   opacity: 1;
+}
+
+.slideshow-container>.active, .slideshow-container .dot:hover {
+   background-color: #717171;
+}
+
+.slideImg {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 80%;
+}
+
+/* Animation Styles */
+
+.fade {
+   animation-name: fade;
+   animation-duration: 1.5s;
+}
+
+@keyframes fade {
+   from {
+      opacity: .4
+   }
+   to {
+      opacity: 1
+   }
+}
+
+@keyframes bounce {
+   0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+   }
+   40% {
+      transform: translateY(5px);
+   }
+   80% {
+      transform: translateY(5px);
+   }
+}
+
+@keyframes bounce-reverse {
+   0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+   }
+   40% {
+      transform: translateY(-5px);
+   }
+   80% {
+      transform: translateY(-5px);
+   }
+}
+
+.animation-bounce {
+   line-height: 75px;
+   opacity: 1;
+   color: rgb(0, 0, 0);
+   border-radius: 50%;
+   animation-name: bounce;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+}
+
+.animation-bounce-reverse {
+   line-height: 75px;
+   opacity: 1;
+   color: rgb(0, 0, 0);
+   border-radius: 50%;
+   animation-name: bounce-reverse;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes transitionIn {
+   from {
+      opacity: 0;
+      transform: translateY(-10px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+@keyframes colourChange {
+   0% {
+      background-color: rgb(255, 128, 255);
+   }
+   25% {
+      background-color: rgb(125, 128, 255);
+   }
+   50% {
+      background-color: rgb(255, 128, 128);
+   }
+   100% {
+      background-color: rgb(255, 128, 255);
+   }
+}
+
+.transition-container:hover {
+   box-shadow: 10px 10px #64468F;
+   transform: translate(-10px, -10px);
+}
+
+.transition-container {
+   transition: transform 1s;
+   transition: box-shadow 0.3s ease-in-out;
+}
+
+.zoom {
+   transition: transform 1s;
+}
+
+.zoom:hover {
+   transform: scale(1.2);
+}
+
+.smooth-transition {
+   transition: all .3s ease-out;
+   scroll-behavior: smooth;
+}
+
+/* Background Styles */
+
+html {
+   overflow-x: hidden;
+   width: auto;
+   height: auto;
+}
+
+body {
+   background: linear-gradient(to bottom, rgba(0, 183, 255, 0.5), rgba(61, 0, 240, 0.5));
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* Nagivation Styles */
+
+/* topnav */
+
+/* Add a background color to the top navigation */
+
+.topnav {
+   background-color: rgba(170, 197, 255, 0.4);
+   border-radius: 30px;
+   padding: 8px 8px;
+}
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+   float: left;
+   display: block;
+   color: #000000;
+   text-align: center;
+   text-decoration: none;
+   padding: 15px 15px;
+   font-size: 17px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+
+.topnav .icon {
+   display: none;
+}
+
+/* Media queries for navbar */
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+@media screen and (max-width: 780px) {
+   .topnav a {
+      display: none;
+   }
+   .topnav a.icon {
+      float: right;
+      display: block;
+   }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+@media screen and (max-width: 780px) {
+   .topnav.responsive {
+      position: relative;
+   }
+   .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+   .topnav.responsive a {
+      float: none;
+      display: block;
+   }
+}
+
+@media screen and (max-width: 780px) {
+   .topnav a {
+      display: none;
+   }
+   .topnav a.icon {
+      float: right;
+      display: block;
+   }
+}
+
+.navbar-brand {
+   width: auto;
+}
+
+.navbar {
+   margin-bottom: 0px;
+   display: flex;
+   background-color: transparent;
+}
+
+nav ul li a {
+   color: black;
+   width: 100%;
+   height: 100%;
+   margin-bottom: 10px;
+}
+
+a:link, a:visited {
+   text-decoration: none;
+}
+
+nav .active, nav .dot:hover {
+   background-color: transparent;
+}
+
+.nav-item {
+   color: black;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+   color: black;
+   background-color: rgb(215, 214, 255);
+}
+
+.nav-pills .nav-link.active, .nav-link {
+   color: black;
+   text-decoration: none;
+   background-color: transparent;
+   border-radius: 30px;
+}
+
+.nav-pills .nav-link.active {
+   background-color: rgba(148, 182, 255, 0.4);
+}
+
+.nav-link:hover {
+   background-color: rgba(148, 182, 255, 0.4);
+   border-radius: 30px;
+   transform: translate(-5px, -5px);
+   transition: all 0.5s ease-in-out;
+   background-color: rgb(215, 214, 255);
+   color: black;
+}
+
+.dropdown-menu {
+   border: none;
+   background-color: transparent;
+}
+
+.dropdown-item {
+   margin-bottom: 7px;
+}
+
+/* Next and Previous buttons */
+
+.quick-arrow {
+   margin-top: 5%;
+}
+
+.quick-arrow a {
+   text-decoration: none;
+   padding: 8px 16px;
+   margin: 10px;
+}
+
+.quick-arrow a:hover {
+   background-color: #64468F;
+   color: black;
+}
+
+.quick-arrow .previous {
+   left: 0;
+   background-color: #f1f1f1;
+   color: black;
+}
+
+.quick-arrow .next {
+   right: 0;
+   background-color: #f1f1f1;
+   color: black;
+}
+
+.quick-arrow .round {
+   border-radius: 50%;
+}
+
+/* About Me Styles */
+
+.about-jumbotron {
+   background-image: url(../Images/mainpicture.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+   top: 0;
+   width: 100%;
+   height: 100vh;
+   padding-top: 0;
+}
+
+.jumbotron-text {
+   padding-top: 100px;
+   margin-bottom: 50vh;
+}
+
+.custom-image {
+   width: 100%;
+}
+
+.index-container {
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/* Past Experiences Styles */
+
+.past-jumbotron {
+   background-image: url(../Images/xian7.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+   top: 0;
+   width: 100%;
+   height: 100vh;
+   padding-top: 0;
+}
+
+.absolute-div {
+   position: absolute;
+   margin-bottom: 70vh;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
+
+/* Current Experiences Styles */
+
+.computing-section {
+   background-image: url(../Images/computerbg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+}
+
+.currentExp-section {
+   background-image: url(../Images/currentExpMain.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+}
+
+.custom-btn:hover {
+   background-color: purple;
+   animation-name: colourChange;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+
+.card {
+   height: 250px;
+}
+
+/* Future Plans Styles */
+
+.futureExp-section {
+   background-image: url(../Images/cyberseckey.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+}
+
+/* Footer Styles */
+
+footer {
+   text-align: center;
+   width: 100%;
+   bottom: 0;
+   background-color: #64468F;
+   color: white;
+   margin-top: 50px;
+   font-size: 16px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer p {
+   font-size: 16px;
+   padding: 0;
+}
+
+footer p a {
+   padding: 20px;
+   font-size: 30px;
+   width: 30px;
+   text-align: center;
+   text-decoration: none;
+   margin: 5px 2px;
+   border-radius: 50%;
+}
+
+.fa:hover {
+   opacity: 0.7;
+}
+
+.fa-instagram, .fa-envelope, .fa-facebook, .fa-spotify {
+   color: white;
+}

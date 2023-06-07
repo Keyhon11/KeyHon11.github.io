@@ -1,1 +1,299 @@
-<p>I am in Index.html<p>
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- File name: index.html
+Author: Tham Key Hon -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- jQuery Cookie for smooth-scroll -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js" data-semver="2.1.4" data-require="jquery@2.1.4"></script>
+
+    <script data-require="jquery-cookie@1.3.1" data-semver="1.3.1"
+        src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.3.1/jquery.cookie.js"></script>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Slideshow/NavMenu Javascript -->
+    <script src="Script/script.js" defer></script>
+
+    <!-- Transition Javascript -->
+    <script src="Script/transition.js" defer></script>
+
+    <!-- Custom Styles -->
+    <link href="CSS/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="about-jumbotron text-center" id="jumbotron">
+        <!-- Start of Navigation -->
+        <nav class="navbar  navbar-fixed-top  bg-color transparent fixed-top">
+            <div class="nav text-decoration-none navbar-expand-md container">
+
+                <a class="navbar-brand zoom" id="keyicon" href="index.html"><img src="Images/keyicon.png"
+                        alt="homekey" style="width: 8vh;" />
+                </a>
+
+                <div class="nav topnav" id="myTopnav">
+
+                    <a class="nav-item nav-pills nav-link active " href="index.html">About Me</a>
+
+                    <!-- Dropdown for experiences -->
+
+                    <div class="nav-item dropdown nav-pills">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Experiences</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item nav-link " href="pastexp.html">Past</a>
+                            <a class="dropdown-item nav-link" href="currentexp.html">Current</a>
+                            <a class="dropdown-item nav-link" href="course&career.html">Future</a>
+
+                        </div>
+                    </div>
+
+                    <a class="nav-item nav-pills nav-link" href="feedback.html">Feedback</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- End of Navigation -->
+
+        <div class="zoom container-fluid jumbotron-text ">
+            <h1>Hello! I'm Tham Key Hon!</h1>
+            <h2>I love sports and meeting new people</h2>
+        </div>
+        <div class="smooth-scroll">
+            <div class="col-12 ">
+
+                <p><a class="btn btn-md animation-bounce scroll-link" href="#" data-id="learnMore">Learn more</a>
+                </p>
+                <div class="arrow-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-caret-down-fill animation-bounce" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Jumbotron -->
+    <!-- Values section -->
+
+    <div class="row mx-lg-5 px-lg-5 mx-md-5 px-md-5">
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div id="learnMore"
+                class="container custom-container transition-container index-container smooth-transition">
+                <section class="col-12 custom-section">
+
+
+
+                    <div class="row  d-flex align-items-center justify-content-center">
+                        <div class="col-12 text-center">
+                            <h2>Values</h2>
+                            <hr>
+                            <h6>Originality, Honesty, Resilience, Genuineness and Gratitude.
+                            </h6>
+                            <hr>
+
+
+                        </div>
+                        <!-- Alert Button -->
+                        <div class="alert alert-info alert-dismissible fade show" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <strong>Try this!</strong> Move your mouse over the image!
+                        </div>
+                        <div class="col-12 text-center">
+                            <figure>
+
+                                <img src="Images/values_self.jpg" alt="self-portrait"
+                                    class="img-fluid images custom-image zoom">
+                                <figcaption>
+                                    <p>I believe in these fundamental values and which helps to guide me in everyday
+                                        tasks.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Interests section -->
+        <div id="interests" class="col-lg-4 col-md-6 col-sm-12">
+
+            <div class="container custom-container transition-container index-container smooth-transition ">
+                <section class="col-12 custom-section ">
+
+
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-12 text-center">
+                            <h2>Interests</h2>
+                            <hr>
+                            <h6>Skating, Running, Cycling, KPOP-Dreamcatcher</h6>
+                            <hr>
+                        </div>
+                        <!-- Alert Button -->
+                        <div class="alert alert-info alert-dismissible fade show" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <strong>Try this!</strong> Click on the Arrows!
+                        </div>
+                        <div class="col-12 ">
+                            <div class="slideshow-container ">
+
+                                <div class="mySlides fade" style="display: block;">
+                                    <div class="numbertext">1 / 4</div>
+                                    <img src="Images/skating.jpg" alt="skating"
+                                        class="images img-fluid slideImg custom-image zoom">
+                                    <div class="text">Skating</div>
+                                </div>
+
+                                <div class="mySlides fade" style="display: none;">
+                                    <div class="numbertext">2 / 4</div>
+                                    <img src="Images/running.jpg" alt="running"
+                                        class="images img-fluid slideImg custom-image zoom">
+                                    <div class="text">Running</div>
+                                </div>
+
+                                <div class="mySlides fade" style="display: none;">
+                                    <div class="numbertext">3 / 4</div>
+                                    <img src="Images/cycling.jpg" alt="cycling"
+                                        class="images img-fluid slideImg custom-image zoom">
+                                    <div class="text">Cycling</div>
+                                </div>
+
+                                <div class="mySlides fade" style="display: none;">
+                                    <div class="numbertext">4 / 4</div>
+                                    <img src="Images/dreamcatcher.jpg" alt="dreamcatcher"
+                                        class="images img-fluid slideImg custom-image zoom">
+                                    <div class="text">KPOP-Dreamcatcher</div>
+                                </div>
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            </div>
+                            <br>
+
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                            </div>
+                            <div class="text-center">
+
+                                <p>Sports allows me to explore new places and helps me to relieve stress. Dreamcatcher
+                                    is a Girl Group that makes unique rock music.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <!-- Personality section -->
+        <div id="personality" class="col-lg-4 col-md-6 col-sm-12">
+
+            <div class="container custom-container transition-container index-container smooth-transition">
+                <section class="col-12 custom-section">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-12 text-center">
+
+                            <h2>Personality</h2>
+                            <hr>
+                            <h6>I am Independent, Adaptable, Creative, Sociable, Original, Fun-loving and
+                                Spontaneous.
+                            </h6>
+                            <hr>
+
+                        </div>
+                        <div class="col-12 text-center">
+                            <figure>
+                                <img src="Images/personality.jpeg" alt="self3"
+                                    class="img-fluid images custom-image zoom">
+
+                                <figcaption>
+                                    <p>I have a genuine interest and insight into others, I find that I am the most
+                                        energized
+                                        when
+                                        engaged in deep topics.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start of Back to top button -->
+    <div class="col-12 text-center smooth-scroll" style="margin-top: 5%;">
+        <div class="arrow-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="bi bi-caret-up-fill animation-bounce-reverse" viewBox="0 0 16 16">
+                <path
+                    d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+            </svg>
+        </div>
+        <p><a class="btn btn-md animation-bounce-reverse " href="#" data-id="jumbotron">
+                Back To Top</a></p>
+    </div>
+
+
+    <!-- Start of Next & Previous buttons -->
+    <div class="quick-arrow d-flex justify-content-center align-items-center">
+
+        <a href="feedback.html" class="previous round">&#8249;</a>
+        <a href="pastexp.html" class="next round ">&#8250;</a>
+
+    </div>
+    <!-- End of Next & Previous buttons -->
+    <footer class="footer">
+
+        <!-- Footer section -->
+
+        <p> &copy; Copyright Tham Key Hon 2021. All rights reserved.
+            <a href="http://www.instagram.com/imdakey/" target="blank" class="fa fa-instagram"></a>
+            <a href="https://open.spotify.com/user/21muvhb53bz5vh7zsiucnjvly?si=0e4b4c71e8604c90" target="blank"
+                class="fa fa-spotify"></a>
+            <a href="https://www.facebook.com/profile.php?id=100010008696379" target="blank" class="fa fa-facebook"></a>
+            <a href="mailto:tkeyhon.20@ichat.sp.edu.sg" target="blank" class="fa fa-envelope"></a>
+        </p>
+
+    </footer>
+</body>
+
+</html>
